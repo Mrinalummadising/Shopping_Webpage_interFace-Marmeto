@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Marmeto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/home.js"></script>
+</head>
+
+<body>
+    <section class="shopping-container">
+        <div class="shopping-container-card">
+            <div class="main-image">
+            </div>
+            <div class="thumbnail-images">
+            </div>
+        </div>
+        <div class="shopping-details-cointainer">
+            <h4 class="vendor"></h4>
+            <h1 class="title"></h1>
+            <hr>
+            <div class="shopping-price">
+                <h1 class="price">$</h1>
+                <h4 class="off"></h4>
+            </div>
+            <h2 class="total_price"><s class="item-price">$</s></h2>
+            <hr>
+            <div class="shopping-item-colours">
+                <h4 class="chose_color">Chose a color</h4>
+                <div class="color-selector" id="colorSelector"></div>
+                <div class="selected-color" id="selectedColor"></div>
+            </div>
+            <hr>
+            <div class="shopping-size-container">
+                <h4 class="size">Select size</h4>
+                <div class="size-selector" id="sizeSelector"></div>
+            </div>
+            <div class="buttons">
+                <div class="value-adjuster">
+                    <span class="btn" id="decreaseBtn">-</span>
+                    <span id="value">0</span>
+                    <span class="btn" id="increaseBtn">+</span>
+                </div>
+                <div>
+                    <button class="addToCart"> <i class="fa fa-shopping-bag"></i> Add To Cart</button>
+                </div>
+            </div>
+            <div class="shopping-saved-products"></div>
+            <hr>
+            <div class="description"> </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

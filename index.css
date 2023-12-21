@@ -1,0 +1,248 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h4,
+.total_price {
+    color: rgb(161, 158, 158);
+    font-weight: lighter;
+}
+
+.shopping-container {
+    display: flex;
+    margin: 50px;
+}
+
+.shopping-container-card {
+    margin: 15px;
+    width: 120%;
+}
+
+.shopping-details-cointainer {
+    margin: 15px;
+    width: 100%;
+}
+
+.main-image img {
+    border-radius: 10px;
+    width: 80%;
+    height: 650px
+}
+
+.thumbnail-images img {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 6px;
+}
+
+.shopping-price {
+    display: flex;
+    margin: 10px 0px 5px 0px;
+}
+
+.off {
+    margin: 5px;
+    margin-left: 10px;
+    color: red;
+    font-size: larger;
+}
+
+.title {
+    margin: 15px 0px 15px 0px
+}
+
+.total_price {
+    margin: 5px 0px 10px 0px
+}
+
+.shopping-item-colours {
+    margin: 20px 0px 20px 0px;
+}
+
+.shopping-size-container {
+    margin: 20px 0px 20px 0px;
+}
+
+.price {
+    color: rgb(73, 73, 177);
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+
+.color-selector {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    margin: 10px 0px 10px 0px
+}
+
+.color-label {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.selected-tick {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    display: none;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.color-label.selected .selected-tick {
+    display: block;
+}
+
+.selected-border {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 80%;
+    height: 80%;
+    border: 3px solid transparent;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.color-label.clicked .selected-border {
+    border-color: white;
+}
+
+.size-selector {
+    display: flex;
+    font-weight: bold;
+}
+
+.size-label {
+    margin-right: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: rgb(216, 233, 240);
+    padding: 5px;
+    border-radius: 9px;
+}
+
+.size-checkbox {
+    margin-right: 5px;
+}
+
+.value-adjuster {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100px;
+    margin: 10px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    font-size: 25px;
+    color: darkblue;
+    font-weight: bold;
+    background-color: rgb(216, 233, 240);
+    border-radius: 35px;
+    padding: 10px;
+}
+
+.btn {
+    font-size: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.addToCart {
+    background-color: rgb(73, 73, 177);
+    padding: 10px;
+    color: white;
+    border-color: rgb(73, 73, 177);
+    font-size: 20px;
+    border-radius: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin: 10px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.shopping-saved-products {
+    margin-bottom: 25px;
+}
+
+.Info {
+    background-color: rgb(187, 230, 187);
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: small;
+}
+
+.description {
+    margin-top: 25px;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .shopping-container {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .main-image img {
+        width: 90%;
+        height: auto;
+    }
+
+    .thumbnail-images img {
+        width: 20%;
+        height: 180px;
+        margin: 5px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .shopping-container {
+        margin: 10px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .shopping-container-card {
+        margin: 15px;
+        width: 60%;
+    }
+
+    .shopping-details-cointainer {
+        margin: 15px;
+        width: 40%;
+    }
+
+    .main-image img {
+        width: 100%;
+        height: 550px
+    }
+
+    .thumbnail-images img {
+        width: 20%;
+        height: 120px;
+        margin: 5px;
+    }
+}
